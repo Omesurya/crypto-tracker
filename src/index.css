@@ -1,0 +1,118 @@
+/* Global Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #f3f4f6, #e0e7ff);
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+/* Search Bar */
+.search-input {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+/* Coin Grid */
+.coin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Coin Card */
+.coin-card {
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.coin-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Coin Image */
+.coin-img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+/* Coin Title */
+.coin-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.coin-card span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Coin Info */
+.coin-card p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* Price Change Colors */
+.green {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.red {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Responsive Padding */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .coin-card {
+    padding: 16px;
+  }
+}
